@@ -1,0 +1,25 @@
+#system_config_tabs .nwt .label em {
+    font-style:normal;
+    text-transform:lowercase;
+    display:block;
+    text-indent:-500px;
+    /*padding-right:10px;*/
+    background:url(logo20.png) no-repeat left center;
+}
+
+.entry-edit .nwt {
+    max-width:800px;
+    overflow:hidden;
+    zoom:1;
+}
+
+.entry-edit .nwt .logo {
+    display:block;
+    float:right;
+    width:200px;
+    background:url(logo.png) no-repeat center center;
+    margin:0;
+    padding-top:100px;
+
+}
+

@@ -1,0 +1,5 @@
+app/code/local/NWT/Base
+app/design/adminhtml/default/default/layout/nwt/base.xml
+app/design/adminhtml/default/default/template/nwt/base
+app/etc/modules/NWT_Base.xml
+skin/adminhtml/default/default/nwt/base

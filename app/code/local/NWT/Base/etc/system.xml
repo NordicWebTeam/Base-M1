@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * NWT_Base extension
+ *
+ * @category    NWT
+ * @package     NWT_Base
+ * @copyright   Copyright (c) 2015 Nordic Web Team ( http://nordicwebteam.se/ )
+ * @license     NWT Commercial License (NWTCL 1.0)
+ * @author      Emil [carco] Sirbu (emil@nordicwebteam.se)
+ *
+ */
+ -->
+<config>
+  <tabs>
+        <nwt translate="label" module="nwt">
+            <label><![CDATA[<em>nordicwebteam</em>]]></label>
+            <sort_order>0</sort_order>
+            <class>nwt</class>
+        </nwt>
+    </tabs>
+  <sections>
+    <nwt translate="label" module="nwt">
+        <label>About Us</label>
+        <tab>nwt</tab>
+        <frontend_type>text</frontend_type>
+        <sort_order>100</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>1</show_in_website>
+        <show_in_store>1</show_in_store>
+        <groups>
+            <aboutus translate="label" module="nwt">
+                <label>nordicwebteam</label>
+                <frontend_model>nwt/adminhtml_system_config_fieldset_hint</frontend_model>
+                <sort_order>0</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+            </aboutus>
+        </groups>
+      </nwt>
+  </sections>
+</config>

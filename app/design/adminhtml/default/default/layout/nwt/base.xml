@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NWT_Base extension
+ *
+ * @category    NWT
+ * @package     NWT_Base
+ * @copyright   Copyright (c) 2015 Nordic Web Team ( http://nordicwebteam.se/ )
+ * @license     NWT Commercial License (NWTCL 1.0)
+ * @author      Emil [carco] Sirbu (emil@nordicwebteam.se)
+ *
+ */
+-->
+
+<layout version="0.1.0">
+
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><file>nwt/base/main.css</file></action>
+        </reference>
+    </default>
+
+</layout>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NWT_Base extension
+ *
+ * @category    NWT
+ * @package     NWT_Base
+ * @copyright   Copyright (c) 2015 Nordic Web Team ( http://nordicwebteam.se/ )
+ * @license     NWT Commercial License (NWTCL 1.0)
+ * @author      Emil [carco] Sirbu (emil@nordicwebteam.se)
+ *
+ */
+-->
+<config>
+  <modules>
+    <NWT_Base>
+      <active>true</active>
+      <codePool>local</codePool>
+    </NWT_Base>
+  </modules>
+</config>

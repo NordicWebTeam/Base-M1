@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NWT_Base extension
+ *
+ * @category    NWT
+ * @package     NWT_Base
+ * @copyright   Copyright (c) 2015 Nordic Web Team ( http://nordicwebteam.se/ )
+ * @license     NWT Commercial License (NWTCL 1.0)
+ * @author      Emil [carco] Sirbu (emil@nordicwebteam.se)
+ *
+ */
+ -->
+<config>
+    <modules>
+        <NWT_Base>
+            <version>1.0.0</version>
+        </NWT_Base>
+    </modules>
+    <global>
+        <models>
+            <nwt>
+                <class>NWT_Base_Model</class>
+            </nwt>
+        </models>
+        <helpers>
+            <nwt>
+                <class>NWT_Base_Helper</class>
+            </nwt>
+        </helpers>
+        <blocks>
+            <nwt>
+                <class>NWT_Base_Block</class>
+            </nwt>
+        </blocks>
+        <resources>
+            <nwtbase_setup>
+                <setup>
+                    <module>NWT_Base</module>
+                    <class>Mage_Sales_Model_Resource_Setup</class>
+                </setup>
+            </nwtbase_setup>
+        </resources>
+    </global>
+
+    <adminhtml>
+        
+        <layout>
+            <updates>
+                <nwt>
+                    <file>nwt/base.xml</file>
+                </nwt>
+            </updates>
+        </layout>
+
+        <menu>
+            <nwt>
+                <title>Nordic Web Team</title>
+                <sort_order>100</sort_order>
+                <children>
+                    <about>
+                        <title>About Us</title>
+                        <sort_order>1000</sort_order>
+                        <action>adminhtml/system_config/edit/section/nwt</action>
+                    </about>
+                </children>
+            </nwt>
+        </menu>
+
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <nwt translate="title">
+                                            <title>Nordic Web Team</title>
+                                        </nwt>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+
+                        <nwt>
+                            <title>Nordic Web Team</title>
+                            <sort_order>100</sort_order>
+                            <children>
+                                <about>
+                                    <title>About Us</title>
+                                    <sort_order>10</sort_order>
+                                </about>
+                            </children>
+                        </nwt>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+    <crontab>
+        <jobs>
+            <nwtbase_logs_cron>
+                <schedule><cron_expr>30 07 * * *</cron_expr></schedule>
+                <run>
+                    <model>nwt/tracker_api::createLog</model>
+                </run>
+            </nwtbase_logs_cron>
+        </jobs>
+    </crontab>
+</config> 
